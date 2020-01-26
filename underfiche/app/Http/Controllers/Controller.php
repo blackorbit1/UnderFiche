@@ -9,5 +9,12 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 class Controller extends BaseController
 {
+    // Ajout de cette variable afin que tous les controlleurs puisse acceder à leur header respectif facilement
+    public $header = [
+        "connexion" => ["titre_page" => "Connexion", "description_page" => "Ceci est la page de connexion"]
+    ];
+
+
+
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 }

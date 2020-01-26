@@ -1,0 +1,55 @@
+
+
+body {
+    font-family: roboto, Arial;
+    color:  black;
+    font-size: 13px;
+
+    margin: auto;
+    background-color: white;
+
+    background-image: url("../images/fond.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+input[type=submit] {
+    cursor: pointer;
+}
+
+input {
+    background-color: #f0f0f0;
+    border: 0;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition-duration: 0.2s;
+}
+
+input:hover {
+    background-color: rgb(194, 194, 194);
+}
+
+
+/** Style de base **/
+
+.cadre {
+    border-radius: 5px;
+    border: 0px solid white;
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.20);
+    padding: 10px;
+    background-color: white;
+}
+
+
+/** Page de connexion **/
+
+.cadre_connexion {
+    margin: auto;
+    margin-top: 200px;
+    max-width: 500px;
+    text-align: center;
+}

@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/connexion', 'ConnexionController@getConnexionPage');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
