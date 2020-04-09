@@ -51,6 +51,7 @@ input:hover {
 .conteneur_connexion_inscription {
     margin: auto;
     width: -webkit-fit-content;
+    width: -moz-fit-content;
     /*margin-top: 100px;*/
 }
 
@@ -63,6 +64,7 @@ input:hover {
     max-width: 500px;
     text-align: center;
     width: -webkit-min-content;
+    width: -moz-min-content;
 }
 
 .texte_inscription {

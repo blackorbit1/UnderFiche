@@ -14,7 +14,7 @@
                     <tr>
                         <td class="conteneur_parties_inscription" valign="top"> <!-- ZONE DES INFORMATIONS IMPORTANTES -->
                             <p class="texte_inscription">
-                                <strong style="color:red">Informations importantes pour la gestion du site</strong>
+                                <strong style="color:red">Informations importantes pour un site propre</strong>
                             </p>
                             <div>
                                 <input type="text" name="discord" placeholder="pseudodiscord#1234" required autofocus>
@@ -38,6 +38,18 @@
                                     <option value="Professeur">Professeur</option>
                                     <option value="Administration">Administration</option>
                                 </select>
+                            </div>
+
+                            <div>
+                                <input type="text" name="nom" placeholder="Nom" required autofocus>
+                            </div>
+
+                            <div>
+                                <input type="text" name="prenom" placeholder="Prenom" required autofocus>
+                            </div>
+
+                            <div>
+                                <input type="text" name="pseudo" placeholder="Pseudo" required autofocus>
                             </div>
 
 
