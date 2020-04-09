@@ -41,6 +41,13 @@ class RegisterController extends Controller
     }
 
     /**
+     * Méthode ajoutée pour ajouter des parametres à l'affichage de la page de registration
+     */
+    public function showRegistrationForm() {
+        return view('auth.register')->with($this->header["connexion"]);
+    }
+
+    /**
      * Get a validator for an incoming registration request.
      *
      * @param  array  $data

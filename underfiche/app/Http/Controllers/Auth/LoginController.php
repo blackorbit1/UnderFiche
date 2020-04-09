@@ -21,6 +21,13 @@ class LoginController extends Controller
     use AuthenticatesUsers;
 
     /**
+     * Méthode ajoutée pour ajouter des parametres à l'affichage de la page de login
+     */
+    public function showLoginForm() {
+        return view('auth.login')->with($this->header["connexion"]);
+     }
+
+    /**
      * Where to redirect users after login.
      *
      * @var string

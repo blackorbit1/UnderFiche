@@ -27,10 +27,11 @@ input {
     padding-left: 20px;
     padding-right: 20px;
     transition-duration: 0.2s;
+    min-width: 150px;
 }
 
 input:hover {
-    background-color: rgb(194, 194, 194);
+    background-color: rgb(217, 217, 217);
 }
 
 
@@ -47,9 +48,28 @@ input:hover {
 
 /** Page de connexion **/
 
-.cadre_connexion {
+.conteneur_connexion_inscription {
     margin: auto;
-    margin-top: 200px;
+    width: -webkit-fit-content;
+    /*margin-top: 100px;*/
+}
+
+.cadre_connexion, .cadre_inscription {
+    padding: 20px;
+    margin: auto;
+    margin-top: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
     max-width: 500px;
     text-align: center;
+    width: -webkit-min-content;
+}
+
+.texte_inscription {
+    font-style: italic;
+    color: gray;
+}
+
+.conteneur_parties_inscription {
+    padding: 20px;
 }
