@@ -1,0 +1,19 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Page de base{% endblock %} </title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+
+    {% include 'topbar.html' %}
+
+
+    {% block body %}Contenu de base{% endblock %}
+
+</body>
+</html>
