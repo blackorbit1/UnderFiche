@@ -14,25 +14,29 @@
                 <form action="<!-- A REFAIREroute('login') -->" method="POST">
 
                     <div>
-                        <input type="email" name="email" placeholder="Email" @error('email') is-invalid @enderror" name="email" value="<!-- A REFAIREold('email') -->" required autocomplete="email" autofocus>
+                        <input type="email" name="email" placeholder="Email" @error('email') is-invalid @enderror" name="email" value="" required autocomplete="email" autofocus>
+                        <!-- A REFAIRE
                         @error('email')
                             <span class="invalid-feedback" role="alert">
-                                <strong><!-- A REFAIRE$message --></strong>
+                                <strong>$message</strong>
                             </span>
                         @enderror
+                        -->
                     </div>
 
                     <div>
                         <input type="password" name="password" placeholder="Mot de passe" @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                        <!-- A REFAIRE
                         @error('password')
                             <span class="invalid-feedback" role="alert">
-                                <strong><!-- A REFAIRE$message --></strong>
+                                <strong>$message</strong>
                             </span>
                         @enderror
+                        -->
                     </div>
 
                     <div>
-                        <input class="form-check-input" type="checkbox" name="remember" id="remember" <!-- A REFAIREold('remember') ? 'checked' : '' -->>
+                        <input class="form-check-input" type="checkbox" name="remember" id="remember"> <!-- A REFAIREold('remember') ? 'checked' : '' -->
                         <label class="form-check-label" for="remember">Se souvenir de moi</label>
                     </div>
 
@@ -52,15 +56,17 @@
                 <p class="texte_inscription">
                     Vous <strong style="color:red">devez</strong> vous inscrire avec l'addresse mail de l'université, un mail de confirmation vous y sera envoyé pour etre sur que vous êtes bien étudiant / prof.
                 </p>
-                <form action="<!-- A REFAIREroute('register') -->" method="POST">
+                <form action="" method="POST"> <!-- A REFAIRE route('register') -->
 
                     <div>
-                        <input type="email" name="email" placeholder="Email de l'université" @error('email') is-invalid @enderror" name="email" value="<!-- A REFAIREold('email') -->" required autocomplete="email" autofocus>
+                        <input type="email" name="email" placeholder="Email de l'université" @error('email') is-invalid @enderror" name="email" value="" required autocomplete="email" autofocus> <!-- A REFAIREold('email') -->
+                        <!-- A REFAIRE
                         @error('email')
                             <span class="invalid-feedback" role="alert">
-                                <strong><!-- A REFAIRE$message --></strong>
+                                <strong>$message</strong>
                             </span>
                         @enderror
+                        -->
                     </div>
 
                     <div>
@@ -69,11 +75,13 @@
 
                     <div>
                         <input type="password" name="password_confirmation" placeholder="Mot de passe (confirmation)" @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                        <!-- A REFAIRE
                         @error('password')
                             <span class="invalid-feedback" role="alert">
-                                <strong><!-- A REFAIRE$message --></strong>
+                                <strong>$message</strong>
                             </span>
                         @enderror
+                        -->
                     </div>
 
                     <br>
