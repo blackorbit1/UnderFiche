@@ -15,14 +15,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import Matiere, Accueil, LandingPage
+from .views import Matiere, Accueil, LandingPage, Inscription
 
 
 
 urlpatterns = [
-    path('matiere', Matiere, name = "Matiere"),
+    # Arrivée sur le site
     path('', LandingPage, name = "LandingPage"),
+    path('inscription', Inscription, name = "Inscription"),
+
+    # Pages principales
     path('accueil', Accueil, name = "Accueil"),
+    path('matiere', Matiere, name="Matiere"),
 ]
 
 
